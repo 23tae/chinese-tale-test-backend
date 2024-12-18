@@ -37,12 +37,12 @@ pip install -r requirements.txt
 ```env
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
-DATABASE_NAME=sinotale
-DATABASE_USERNAME=postgres
-DATABASE_PASSWORD=password
+DATABASE_NAME=your_db_name
+DATABASE_USERNAME=your_db_username
+DATABASE_PASSWORD=your_db_password
 ```
 
-4. 서버 실행
+4. 로컬 서버 실행
 ```bash
 uvicorn app.main:app --reload
 ```

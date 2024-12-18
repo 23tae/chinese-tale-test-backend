@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from .utils.db_loader import init_db
 
 
-app = FastAPI(title="SinoTale API")
+app = FastAPI(title="Chinese Tale Test API")
 
 create_tables()
 
@@ -23,7 +23,7 @@ app.include_router(analysis.router, prefix="/api", tags=["캐릭터 선정"])
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to SinoTale API"}
+    return {"message": "Welcome to Chinese Tale Test API"}
 
 
 @app.on_event("startup")
